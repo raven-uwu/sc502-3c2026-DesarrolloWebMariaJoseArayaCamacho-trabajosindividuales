@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Registro</h1>
+    <form action="/submit-form" method="post">
+      <input type="text" name="nombre" placeholder="Nombre" required>
+      <input type="email" name="correo" placeholder="Correo" required>
+      <input type="password" name="contrasena" placeholder="Password" required>
+      <input type="date" name="fecha" required>
+      <input type="number" name="edad" min="0" max="120" placeholder="Edad">
+      <textarea name="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aqui"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f0f6ff;
+  color: #1f2d3d;
+  margin: 0;
+}
+
+.site-nav {
+  padding: 16px 32px;
+  background-color: #0d47a1;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-link:hover {
+  color: #90caf9;
+}
+
+.doctor-card {
+  max-width: 720px;
+  margin: 32px auto;
+  padding: 32px;
+  background-color: #ffffff;
+  border: 1px solid #bbdefb;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(13, 71, 161, 0.12);
+  text-align: center;
+}
+
+.doctor-name {
+  color: #0d47a1;
+  font-size: 2rem;
+  margin: 0 0 8px;
+}
+
+.doctor-specialty {
+  color: #1e88e5;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+#descripcion {
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.btn-cita {
+  padding: 10px 28px;
+  background-color: #1e88e5;
+  border-color: #1e88e5;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.btn-cita:hover {
+  background-color: #0d47a1;
+  border-color: #0d47a1;
+}
+
+.comments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+
+.comment-card {
+  flex: 0 1 280px;
+  box-sizing: border-box;
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #bbdefb;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(13, 71, 161, 0.08);
+  text-align: center;
+}
+
+.comment-card h3 {
+  color: #0d47a1;
+  font-size: 1.1rem;
+  margin: 0 0 12px;
+}
+
+.comment-text {
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+
+.comment-date {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin: 0;
+}
