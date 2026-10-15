@@ -1,13 +1,15 @@
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #f0f6ff;
-  color: #1f2d3d;
+  font-family: "Quicksand", "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(180deg, #e3f2fd 0%, #f7fbff 70%);
+  color: #2c3e50;
   margin: 0;
+  min-height: 100vh;
 }
 
 .site-nav {
-  padding: 16px 32px;
-  background-color: #0d47a1;
+  padding: 16px 24px;
+  background-color: #64b5f6;
+  box-shadow: 0 4px 14px rgba(30, 136, 229, 0.25);
 }
 
 .menu-list {
@@ -15,97 +17,141 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 16px 24px;
+  gap: 12px 16px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .menu-link {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 999px;
   color: #ffffff;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .menu-link:hover {
-  color: #90caf9;
+  background-color: #ffffff;
+  color: #1e88e5;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  background-color: #bbdefb;
+  color: #0d47a1;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.avatar-doctor {
+  width: 72px;
+  height: 72px;
+  font-size: 1.4rem;
 }
 
 .doctor-card {
-  max-width: 720px;
-  margin: 32px auto;
-  padding: 32px;
+  max-width: 680px;
+  margin: 40px auto 32px;
+  padding: 36px 32px;
   background-color: #ffffff;
-  border: 1px solid #bbdefb;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(13, 71, 161, 0.12);
+  border: 2px dashed #90caf9;
+  border-radius: 28px;
+  box-shadow: 0 10px 24px rgba(30, 136, 229, 0.15);
   text-align: center;
 }
 
 .doctor-name {
-  color: #0d47a1;
+  color: #1565c0;
   font-size: 2rem;
-  margin: 0 0 8px;
+  margin: 0 0 10px;
 }
 
 .doctor-specialty {
-  color: #1e88e5;
-  font-size: 1.25rem;
-  font-weight: 500;
+  display: inline-block;
+  padding: 6px 18px;
   margin: 0 0 20px;
+  background-color: #e3f2fd;
+  color: #1976d2;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 999px;
 }
 
 #descripcion {
-  line-height: 1.6;
+  color: #4a5a6a;
+  line-height: 1.7;
   margin: 0 0 24px;
 }
 
 .btn-cita {
-  padding: 10px 28px;
-  background-color: #1e88e5;
-  border-color: #1e88e5;
-  border-radius: 8px;
-  transition: background-color 0.2s;
+  padding: 10px 30px;
+  background-color: #42a5f5;
+  border-color: #42a5f5;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 0.2s, background-color 0.2s;
 }
 
 .btn-cita:hover {
-  background-color: #0d47a1;
-  border-color: #0d47a1;
+  background-color: #1e88e5;
+  border-color: #1e88e5;
+  transform: translateY(-3px);
 }
 
 .comments {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 28px;
   max-width: 1000px;
-  margin: 0 auto 40px;
+  margin: 0 auto 48px;
+  padding: 0 16px;
 }
 
 .comment-card {
-  flex: 0 1 280px;
+  flex: 0 1 260px;
+  max-width: 100%;
   box-sizing: border-box;
-  padding: 24px;
+  padding: 28px 24px;
   background-color: #ffffff;
-  border: 1px solid #bbdefb;
-  border-radius: 20px;
-  box-shadow: 0 2px 8px rgba(13, 71, 161, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(30, 136, 229, 0.12);
   text-align: center;
+  transition: transform 0.2s;
+}
+
+.comment-card:hover {
+  transform: translateY(-4px);
 }
 
 .comment-card h3 {
-  color: #0d47a1;
-  font-size: 1.1rem;
+  color: #1565c0;
+  font-size: 1.15rem;
   margin: 0 0 12px;
 }
 
 .comment-text {
-  line-height: 1.5;
-  margin: 0 0 12px;
+  color: #4a5a6a;
+  line-height: 1.6;
+  margin: 0 0 14px;
 }
 
 .comment-date {
-  color: #6c757d;
-  font-size: 0.9rem;
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #f1f8ff;
+  color: #5b7083;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  border-radius: 999px;
   margin: 0;
 }
